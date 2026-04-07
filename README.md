@@ -15,23 +15,26 @@ MySQL Database → SQL Extraction Scripts → Python ETL Processing → Bash Aut
 
 ## Project Structure
 scripts/
-- export.sql  (Extract raw data from MySQL)
-- import.sql  (Load processed data into database)
-- server.py   (Core transformation logic)
+- export.sql (Extract raw data from MySQL)
+- import.sql (Load processed data into database)
+- server.py (Core transformation logic)
 - pipeline.sh (End-to-end automation script)
 
 ## ETL Workflow
 
-Extract (E):
+Extract (E):  
 Raw data is extracted from MySQL using SQL queries.
 
-Transform (T):
-Python processes the data by cleaning missing values, formatting columns, and applying transformation rules.
+Transform (T):  
+Python processes the data by:
+- Cleaning missing values
+- Formatting columns
+- Applying transformation rules
 
-Load (L):
+Load (L):  
 Processed data is inserted back into MySQL for storage or analysis.
 
-Automation:
+Automation:  
 Run the full pipeline using:
 bash pipeline.sh
 
@@ -53,11 +56,11 @@ This project demonstrates the ability to build real-world data workflows, connec
 - Containerize using Docker
 
 ## Skills Gained
-Data Engineering Fundamentals  
-ETL Pipeline Architecture  
-SQL + Python Integration  
-Automation Engineering (Bash)  
-System Thinking  
+- Data Engineering Fundamentals
+- ETL Pipeline Architecture
+- SQL + Python Integration
+- Automation Engineering (Bash)
+- System Thinking
 
 ## Author
 Yohannes Jima Mekonene
