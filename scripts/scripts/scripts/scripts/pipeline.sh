@@ -1,7 +1,9 @@
 #!/bin/bash
 
-echo "Starting ETL Pipeline..."
+mkdir -p logs
 
-python3 server.py
+echo "Starting ETL Pipeline..." >> logs/pipeline.log
 
-echo "ETL Process Completed"
+python3 server.py >> logs/pipeline.log
+
+echo "Pipeline Finished" >> logs/pipeline.log
