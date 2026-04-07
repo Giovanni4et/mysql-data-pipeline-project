@@ -1,51 +1,39 @@
-# 🛠️ MySQL Data Pipeline Project
+# MySQL Data Pipeline (ETL Project)
 
-## 📌 Overview
-This project demonstrates a lightweight data engineering pipeline using MySQL, Python, and Bash. It simulates real-world data workflows including data extraction, transformation, and loading (ETL process).
+## Overview
+This project demonstrates a simple ETL (Extract, Transform, Load) data pipeline using MySQL, Python, and Bash. It simulates how real data engineering systems process data.
 
----
+## Tech Stack
+- MySQL → Data storage
+- Python → Data processing
+- Bash → Automation
 
-## ⚙️ Tech Stack
-- MySQL (Data storage & queries)  
-- Python (Data processing / scripting)  
-- Bash (Automation scripts)
+## Architecture
+MySQL → SQL Scripts → Python Processing → Bash Automation
 
----
-
-## 📊 Project Structure
-
+## Project Structure
 scripts/
-├── export.sql # Extract data from database
-├── import.sql # Create or load processed data
-├── server.py # Python script for pipeline execution
-├── pipeline.sh # Bash script to automate workflow
+- export.sql
+- import.sql
+- server.py
+- pipeline.sh
 
+## Workflow
+1. Extract data from MySQL using SQL queries
+2. Transform/process data using Python
+3. Load processed data back into system
+4. Automate full workflow using Bash script
 
----
+## Skills Demonstrated
+- Data engineering fundamentals
+- ETL pipeline design
+- SQL + Python integration
+- Automation using Bash
 
-## 🔄 Workflow Description
-- Data Extraction → SQL queries retrieve raw data from MySQL  
-- Data Processing → Python script handles processing logic  
-- Data Loading → Processed data is stored back into database  
-- Automation → Bash script runs the full pipeline  
+## Future Improvements
+- Add real dataset integration
+- Add Airflow orchestration
+- Add cloud deployment
 
----
-
-## 🚀 How to Run
-1. Clone the repository  
-2. Run SQL scripts inside MySQL environment  
-
-```bash
-python scripts/server.py
-
-bash scripts/pipeline.sh
-
-🎯 Skills Demonstrated
-SQL Data Handling
-ETL Pipeline Design
-Python Automation
-Bash Scripting
-Data Engineering Fundamentals
-👤 Author
-
+## Author
 Yohannes Jima Mekonene
